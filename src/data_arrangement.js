@@ -1,5 +1,5 @@
 
-var dataArray = [];
+export var dataArray = [];
 
 const dateArray = [];
 const timeArray = [];
@@ -7,11 +7,11 @@ const senderArray = [];
 const textArray = [];
 const emojiArray = [];
 
-var dateMap = new Map();
-var timeMap = new Map();
-var senderMap = new Map();
-var textMap = new Map();
-var emojiMap = new Map();
+export var dateMap = new Map();
+export var timeMap = new Map();
+export var senderMap = new Map();
+export var textMap = new Map();
+export var emojiMap = new Map();
 
 
 
