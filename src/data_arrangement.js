@@ -1,3 +1,4 @@
+
 var dataArray = [];
 
 const dateArray = [];
@@ -11,9 +12,6 @@ var timeMap = new Map();
 var senderMap = new Map();
 var textMap = new Map();
 var emojiMap = new Map();
-
-
-
 
 
 
@@ -191,6 +189,9 @@ function splitData() {
            textMap.set(textArray[i],1);
         }
     }
+    removal(textMap);
+
+
 
 
 
@@ -214,13 +215,8 @@ function splitData() {
     emojiMap = sortMapDescending(emojiMap);
 
     console.log("Splitting Done -----------------------------------------------------")
+
 }
-
-
-
-
-
-
 
 
 
@@ -276,6 +272,16 @@ function showEmoji(){
 
 
 
+
+
+
+
+
+
+
+
+
+
 //utility functions
 
 
@@ -301,7 +307,6 @@ function findSecondOccurrence(str) {
 
     return -1; 
 }
-
 
 
 
@@ -344,4 +349,21 @@ function sortMapDescending(map) {
     var sortedMap = new Map(sortedArray);
 
     return sortedMap;
+}
+
+
+
+
+
+
+// removing the unwanted keys 
+
+function removal(map){
+
+    list = ["<media","omitted>","<this","edited>"]
+
+    list.forEach(element => {
+        map.delete(element)
+    })
+
 }
