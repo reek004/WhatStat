@@ -1,0 +1,116 @@
+body {
+    background-color: #103928;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.box1 {
+    width: 450px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    position: relative;
+    left: 30px;
+    
+}
+.box2 {
+    width: 200px;
+    height: 250px;
+    border-radius: 40px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    position: relative;
+    top: 160px;
+    right: 415px;
+}
+.box3 {
+    width: 160px;
+    height: 250px;
+    border-radius: 40px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    position: relative;
+    top:160px;
+    right:410px;
+}
+.box4 {
+    width: 450px;
+    height: 100px;
+    border-radius: 40px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    position: relative;
+    top:350px;
+    right:840px;
+}
+.box5 {
+    width: 500px;
+    height: 200px;
+    border-radius: 40px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    position: relative;
+    bottom: 175px;
+    left:390px;
+}
+.box6 {
+    width: 500px;
+    height: 210px;
+    border-radius: 40px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    position: relative;
+    top:50px;
+    right:230px;
+}
+.box7 {
+    width: 300px;
+    height: 430px;
+    border-radius: 40px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    position: relative;
+    left:500px;
+    bottom:400px;
+
+}
