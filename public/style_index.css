@@ -124,15 +124,22 @@ nav {
 }
 .container1 {
     text-align: center;
-    margin-top: 20px; /* Adjust the margin as needed to move the container upward */
+    margin-top: 20px;
 }
 
 .container1 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 80px;
     text-transform: capitalize;
-    margin-top: 10px; /* Adjust the margin as needed to move the heading upward */
+    margin-top: 40px;
 }
+
+.container1 .text img {
+    position: relative;
+    top: -10px;
+    margin-bottom: 80px; /* Adjust the top value to move the image upward */
+}
+
 .section.three {
     background-color: #111B21;
     color: #fff; /* Set text color to white or any contrasting color */
@@ -158,38 +165,30 @@ nav {
     margin: 0;
     color: #25D366; /* Corrected color value */
 }
-.wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Set the height of the wrapper to 100% of the viewport height */
-    margin: -100px 0 0; /* Adjust the margin-top value as needed to move it higher */
-}
 .chat_ana_upload {
-    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
 }
 
 .border {
-    height: 80px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #D9F8C7;
-    padding: 10px;
-    border-radius: 15px;
+    text-align: center;
 }
 
-label {
+/* Style the custom file input button and label */
+.border label,
+.border button {
     background-color: #26D367;
-    color: #000000;
-    font-family: 'Poppins', sans-serif;
-    font-size: large;
-    font-weight: bold;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
     border: none;
     border-radius: 15px;
-    padding: 10px 20px;
     cursor: pointer;
-    width: 75%;
+    display: inline-block;
+    margin: 5px; /* Add space between the label and the button */
+}
+
+/* Optional: Add hover effect to the buttons */
+.border label:hover,
+.border button:hover {
+    background-color: #1FA856;
 }
