@@ -1,12 +1,17 @@
-import {dateMap,timeMap,senderMap,emojiMap,textMap} from "./data_arrangement.js";
+import {dataArray,dateMap,timeMap,senderMap,emojiMap,textMap} from "./data_arrangement.js";
+
+
+
+// total no. of conversation
+
+totalConversation = dataArray.length;
+
 
 
 
 
 
 //no. of Messages send by the two persons
-
-
 
 messageMap = new Map(senderMap)
 
@@ -23,9 +28,6 @@ const messageValue2 = messageEntry2[1];//no. of messages by person 2
 
 
 // top 5 used emojis
-
-
-
 
 mostUsedEmojiMap = new Map(emojiMap)
 
@@ -52,5 +54,36 @@ const emojiValue5 = emojiEntry5[1]; // no. of times emoji 5 is used
 
 
 
+
+
+
+
+
+
+// Mosted texted on which date
+
+mostTextedMap = new Map(dateMap);
+
+const mostTextedEntry = mostTextedMap.entries().next().value;
+const mostTextedDate = mostTextedEntry[0];
+
+var inputDate = new Date(mostTextedDate);
+
+var options = { 
+  year: 'numeric', 
+  month: 'long', 
+  day: 'numeric' 
+};
+
+
+const formattedDate = inputDate.toLocaleString('en-US', options);// On which date did they texted the most
+const mostTextedTime = mostTextedEntry[1];// how many they have send
+
+
+
+
+
+
+// Most Active time
 
 
