@@ -125,14 +125,23 @@ nav {
 
 .container1 {
     text-align: center;
-    margin-top: 2vh; /* Changed from 20px to 2vh */
+
+    margin-top: 20px;
 }
 
 .container1 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 8vh; /* Changed from 80px to 8vh */
     text-transform: capitalize;
-    margin-top: 1vh; /* Changed from 10px to 1vh */
+
+    margin-top: 40px;
+}
+
+.container1 .text img {
+    position: relative;
+    top: -10px;
+    margin-bottom: 80px; /* Adjust the top value to move the image upward */
+
 }
 
 .section.three {
@@ -155,44 +164,69 @@ nav {
 }
 
 #bottom {
-    font-size: 6vh; /* Changed from 60px to 6vh */
+    font-size: 6vh; 
     margin: 0;
     color: #25D366;
 }
+
 
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: -10vh 0 0; /* Adjusted margin-top */
+    margin: -10vh 0 0; 
 }
 
+
 .chat_ana_upload {
-    text-align: center;
+    margin-top: 20px; 
 }
 
 .border {
-    height: 8vh; /* Changed from 80px to 8vh */
-    width: 30vw; /* Changed from 300px to 30vw */
+
+    text-align: center;
+
+    height: 8vh;
+    width: 30vw; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #D9F8C7;
-    padding: 1vh; /* Changed from 10px to 1vh */
-    border-radius: 1.5vh; /* Changed from 15px to 1.5vh */
+    padding: 1vh; 
+    border-radius: 1.5vh; 
+
 }
 
-label {
+
+.border label,
+.border button {
     background-color: #26D367;
+
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px; 
+}
+
+
+.border label:hover,
+.border button:hover {
+    background-color: #1FA856;
+}
+
     color: #000000;
     font-family: 'Poppins', sans-serif;
-    font-size: 2vh; /* Changed from large to 2vh */
+    font-size: 2vh; 
     font-weight: bold;
     border: none;
-    border-radius: 1.5vh; /* Changed from 15px to 1.5vh */
-    padding: 1vh 2vh; /* Changed from 10px 20px to 1vh 2vh */
+    border-radius: 1.5vh; 
+    padding: 1vh 2vh; 
     cursor: pointer;
     width: 75%;
 }
