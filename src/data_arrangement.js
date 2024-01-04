@@ -43,7 +43,12 @@ function uploadData() {
     emojiMap.clear();
 
     var fileInput = document.getElementById('chat_file');
-    var file = fileInput.files[0];
+
+    const prevFile = fileInput.files[0];
+    var file = new Blob(prevFile);
+
+
+    
     var fileReader = new FileReader();   
 
     fileReader.onload = function (e) {
@@ -71,7 +76,7 @@ function uploadData() {
     };
     fileReader.readAsText(file);
 
-    console.log("Uploaded the file: " + file.name + "\n");
+    console.log("Uploaded the file --------------------------------------------");
 }
 
 
@@ -220,16 +225,13 @@ function splitData() {
 
 
 
-
-
-
-//Inputs file and returns the splitted results in their respective maps
-document.getElementById('chat_file').addEventListener('change', dataToMap());
+document.getElementById("get_analysis").addEventListener("click", dataToMap)
 
 function dataToMap(){
     
     uploadData();
     setTimeout(splitData, 1000);
+
 }
 
 
@@ -361,7 +363,7 @@ function sortMapDescending(map) {
 
 function removal(map){
 
-    list = ["<media","omitted>","<this","edited>"]
+    const list = ["<media","omitted>","<this","edited>"]
 
     list.forEach(element => {
         map.delete(element)
