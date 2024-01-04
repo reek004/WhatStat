@@ -76,7 +76,7 @@ function uploadData() {
     };
     fileReader.readAsText(file);
 
-    console.log("Uploaded the file --------------------------------------------");
+    //console.log("Uploaded the file --------------------------------------------");
 }
 
 
@@ -228,10 +228,9 @@ function splitData() {
     const totalConversation = dataArray.length;
     localStorage.setItem("conversation", totalConversation)
 
-    const messageEntry1 = Array.from(items.keys())[2];                 // Returns 'item3'
-
-    const messagePerson1 = Array.from(items.keys())[2]; //name of person 1
-    const messageValue1 = messageEntry1[1];//no. of messages by person 1
+     
+    const messagePerson1 = Array.from(items.keys())[0]; //name of person 1
+    const messageValue1 = Array.from(items.values())[0];//no. of messages by person 1
     localStorage.setItem("messagePerson1", messagePerson1)
     localStorage.setItem("messageValue1", messageValue1)
 
@@ -243,7 +242,7 @@ function splitData() {
     localStorage.setItem("messageValue2", messageValue2)
 
 
-    console.log("Splitting Done -----------------------------------------------------")
+    //console.log("Splitting Done -----------------------------------------------------")
 
 }
 
