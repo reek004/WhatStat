@@ -44,8 +44,8 @@ function uploadData() {
 
     var fileInput = document.getElementById('chat_file');
 
-    const prevFile = fileInput.files[0];
-    var file = new Blob(prevFile);
+    const file = fileInput.files[0];
+    //var file = new Blob(prevFile);
 
 
     
@@ -136,7 +136,7 @@ function splitData() {
     
 
     tempTextArray.forEach(element => {
-        words = element.split(" ");
+        var words = element.split(" ");
         words.forEach(word => {
             textArray.push(word);
         });
