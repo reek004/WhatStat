@@ -2,88 +2,194 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgba(255, 250, 237);
+}
+
+header {
+    justify-content: center;
+    max-width: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
 }
 
 nav {
-    background-color: rgba(255, 250, 237);
-    padding: 10px 20px;
-    height: 40px;
+    height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px ridge #686767;
+    border-bottom: 1px solid #000;
 }
 
 .navbar-brand {
-    font-size: 15px;
+    font-size: 18px;
     color: #26D367;
     font-weight: 580;
     display: flex;
     align-items: center;
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
+    margin-left: 20px;
 }
 
 .navbar-brand img {
-    margin-left: 10px;
-    width: 30px;
-    height: 24px;
+    width: 40px;
+    height: 32px;
+    margin-right: 10px;
 }
 
-.nav-link {
-    font-size: 12px; 
+
+.nav-links {
+    margin-right: 500px;
+    display: flex;
+    list-style: none;
+}
+
+.nav-items {
+    margin-right: 40px; /* Adjust the margin between nav items */
+}
+
+.nav-items:last-child {
+    margin-right: 0; /* Remove margin from the last nav item to prevent extra space */
+}
+
+.nav-items a {
     text-decoration: none;
-    color: #000; 
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000000;
+    position: relative;
 }
 
-.nav-link-l {
-    font-size: 12px; 
-    margin-right: 100px;
-    text-decoration: none;
-    color: #000; 
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+.nav-items a:hover::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #26D367;
+    transition: width 0.5s ease;
 }
 
+.nav-items a:hover {
+    color: #26D367;
+    border-bottom: 2px solid #26D367 ;
+}
 .container {
+    margin-top: 40px;
     margin: auto;
-    position: relative; 
+    position: relative;
+    align-items: center;
 }
 
 .img {
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 20px; 
-    display: block; 
-    width: calc(100% - 240px); 
-    height: auto;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: block;
+    width: 1450px;
+    height: 600px;
 }
 
 .overlay {
     position: absolute;
-    top: -10%;
-    left: 32%;
-    transform: translate(-25%,50%);
+    top: -15%;
+    left: 28%;
+    transform: translate(-25%, 50%);
     text-align: left;
-    color: #fff; 
-    z-index: 2; 
+    color: #fff;
+    z-index: 2;
 }
 
-.overlay h1{
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif; 
+.overlay h1 {
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    color: #fff; 
+    color: #fff;
+    margin-bottom: 10px; 
 }
+
 .overlay p {
     margin: 0;
     max-width: 50%;
-    margin-top: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    color: #fff; 
+    color: #fff;
+    margin-top: 10px; 
+}
+.container1 {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed to move the container upward */
+}
+
+.container1 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-top: 10px; /* Adjust the margin as needed to move the heading upward */
+}
+.section.three {
+    background-color: #111B21;
+    color: #fff; /* Set text color to white or any contrasting color */
+    padding: 60px; /* Add padding as needed */
+}
+
+.chat_ana_txt {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+
+#top {
+    font-size: 60px;
+    margin: 0;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+#bottom {
+    font-size: 60px;
+    margin: 0;
+    color: #25D366; /* Corrected color value */
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height of the wrapper to 100% of the viewport height */
+    margin: -100px 0 0; /* Adjust the margin-top value as needed to move it higher */
+}
+.chat_ana_upload {
+    text-align: center;
+}
+
+.border {
+    height: 80px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9F8C7;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+label {
+    background-color: #26D367;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 75%;
 }

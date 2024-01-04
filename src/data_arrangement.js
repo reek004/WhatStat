@@ -224,6 +224,7 @@ function splitData() {
 
 
 //Inputs file and returns the splitted results in their respective maps
+document.getElementById('chat_file').addEventListener('change', dataToMap());
 
 function dataToMap(){
     
