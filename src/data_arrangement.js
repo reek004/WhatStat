@@ -1,5 +1,5 @@
 
-export var dataArray = [];
+var dataArray = [];
 
 const dateArray = [];
 const timeArray = [];
@@ -7,11 +7,11 @@ const senderArray = [];
 const textArray = [];
 const emojiArray = [];
 
-export var dateMap = new Map();
-export var timeMap = new Map();
-export var senderMap = new Map();
-export var textMap = new Map();
-export var emojiMap = new Map();
+ var dateMap = new Map(); 
+ var timeMap = new Map();
+ var senderMap = new Map();
+ var textMap = new Map();
+ var emojiMap = new Map();
 
 
 
@@ -219,13 +219,37 @@ function splitData() {
     textMap = sortMapDescending(textMap);
     emojiMap = sortMapDescending(emojiMap);
 
+
+    
+
+
+
+
+    const totalConversation = dataArray.length;
+    localStorage.setItem("conversation", totalConversation)
+
+    const messageEntry1 = Array.from(items.keys())[2];                 // Returns 'item3'
+
+    const messagePerson1 = Array.from(items.keys())[2]; //name of person 1
+    const messageValue1 = messageEntry1[1];//no. of messages by person 1
+    localStorage.setItem("messagePerson1", messagePerson1)
+    localStorage.setItem("messageValue1", messageValue1)
+
+
+    const messageEntry2 = messageMap.entries().next().value;
+    const messagePerson2 = messageEntry2[0];//name of person 2
+    const messageValue2 = messageEntry2[1];//no. of messages by person 2
+    localStorage.setItem("messagePerson2", messagePerson2)
+    localStorage.setItem("messageValue2", messageValue2)
+
+
     console.log("Splitting Done -----------------------------------------------------")
 
 }
 
 
 
-document.getElementById("get_analysis").addEventListener("click", dataToMap)
+//document.getElementById("get_analysis").addEventListener("click", dataToMap)
 
 function dataToMap(){
     

@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 header {
@@ -15,7 +16,7 @@ header {
 }
 
 nav {
-    height: 75px;
+    height: 10vh; /* Changed from 75px to 7vh */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,47 +24,45 @@ nav {
 }
 
 .navbar-brand {
-    font-size: 18px;
+    font-size: 18px; 
     color: #26D367;
     font-weight: 580;
     display: flex;
     align-items: center;
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
-    margin-left: 20px;
+    margin-left: 2vh; 
 }
 
 .navbar-brand img {
-    width: 40px;
-    height: 32px;
-    margin-right: 10px;
+    width: 5vh; /* Changed from 40px to 4vh */
+    height: 5vh; /* Changed from 32px to 3.2vh */
+    margin-right: .5vh; /* Changed from 10px to 1vh */
 }
 
-
 .nav-links {
-    margin-right: 500px;
+    margin-right: 40vw; /* Changed from 500px to 10vw */
     display: flex;
     list-style: none;
 }
 
 .nav-items {
-    margin-right: 40px; /* Adjust the margin between nav items */
+    margin-right: 4vh; /* Changed from 40px */
 }
 
 .nav-items:last-child {
-    margin-right: 0; /* Remove margin from the last nav item to prevent extra space */
+    margin-right: 0;
 }
 
 .nav-items a {
     text-decoration: none;
-    margin-left: 20px;
-    font-size: 16px;
+    margin-left: 2vh;
+    font-size: 2.5vh; /* Changed from 16px to 1.6vh */
     font-weight: 500;
     text-transform: capitalize;
     color: #000000;
     position: relative;
 }
-
 .nav-items a:hover::before {
     content: '';
     position: absolute;
@@ -80,20 +79,21 @@ nav {
     border-bottom: 2px solid #26D367 ;
 }
 .container {
-    margin-top: 40px;
+    margin-top: 4vh; /* Changed from 40px to 4vh */
     margin: auto;
     position: relative;
     align-items: center;
 }
 
 .img {
-    margin-top: 80px;
+    margin-top: 12vh; /* Changed from 80px to 8vh */
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 2vh; /* Changed from 20px to 2vh */
     display: block;
-    width: 1450px;
-    height: 600px;
+    width: 94vw; /* Changed from 1450px to 100vw */
+    max-width: 1450px; /* Added max-width */
+    height: outo; /* Changed from 600px to 60vh */
 }
 
 .overlay {
@@ -107,11 +107,11 @@ nav {
 }
 
 .overlay h1 {
-    font-size: 80px;
+    font-size: 8vh; /* Changed from 80px to 8vh */
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #fff;
-    margin-bottom: 10px; 
+    margin-bottom: 1vh; /* Changed from 10px to 1vh */
 }
 
 .overlay p {
@@ -120,76 +120,79 @@ nav {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #fff;
-    margin-top: 10px; 
+    margin-top: 1vh; /* Changed from 10px to 1vh */
 }
+
 .container1 {
     text-align: center;
-    margin-top: 20px; /* Adjust the margin as needed to move the container upward */
+    margin-top: 2vh; /* Changed from 20px to 2vh */
 }
 
 .container1 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 80px;
+    font-size: 8vh; /* Changed from 80px to 8vh */
     text-transform: capitalize;
-    margin-top: 10px; /* Adjust the margin as needed to move the heading upward */
+    margin-top: 1vh; /* Changed from 10px to 1vh */
 }
+
 .section.three {
     background-color: #111B21;
-    color: #fff; /* Set text color to white or any contrasting color */
-    padding: 60px; /* Add padding as needed */
+    color: #fff;
+    padding: 6vh; /* Changed from 60px to 6vh */
 }
 
 .chat_ana_txt {
     text-align: left;
-    margin-left: 50px;
-    margin-top: 40px;
+    margin-left: 5vw; /* Changed from 50px to 5vw */
+    margin-top: 4vh;
 }
 
-
 #top {
-    font-size: 60px;
+    font-size: 6vh; /* Changed from 60px to 6vh */
     margin: 0;
     color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 0.5vh; /* Changed from 5px to 0.5vh */
 }
 
 #bottom {
-    font-size: 60px;
+    font-size: 6vh; /* Changed from 60px to 6vh */
     margin: 0;
-    color: #25D366; /* Corrected color value */
+    color: #25D366;
 }
+
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Set the height of the wrapper to 100% of the viewport height */
-    margin: -100px 0 0; /* Adjust the margin-top value as needed to move it higher */
+    height: 100vh;
+    margin: -10vh 0 0; /* Adjusted margin-top */
 }
+
 .chat_ana_upload {
     text-align: center;
 }
 
 .border {
-    height: 80px;
-    width: 300px;
+    height: 8vh; /* Changed from 80px to 8vh */
+    width: 30vw; /* Changed from 300px to 30vw */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #D9F8C7;
-    padding: 10px;
-    border-radius: 15px;
+    padding: 1vh; /* Changed from 10px to 1vh */
+    border-radius: 1.5vh; /* Changed from 15px to 1.5vh */
 }
 
 label {
     background-color: #26D367;
     color: #000000;
     font-family: 'Poppins', sans-serif;
-    font-size: large;
+    font-size: 2vh; /* Changed from large to 2vh */
     font-weight: bold;
     border: none;
-    border-radius: 15px;
-    padding: 10px 20px;
+    border-radius: 1.5vh; /* Changed from 15px to 1.5vh */
+    padding: 1vh 2vh; /* Changed from 10px 20px to 1vh 2vh */
     cursor: pointer;
     width: 75%;
 }

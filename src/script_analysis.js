@@ -1,19 +1,49 @@
-import {dataArray,dateMap,timeMap,senderMap,emojiMap,textMap} from "./data_arrangement.js";
+
+document.getElementById("total_message").innerHTML = localStorage.getItem("conversation")
+
+document.getElementById("person1").innerHTML = localStorage.getItem("messagePerson1")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
 
 
 
 // total no. of conversation
 
-totalConversation = dataArray.length;
-
-
-
-
+const totalConversation = localStorage.getItem("conversation");
 
 
 //no. of Messages send by the two persons
 
-messageMap = new Map(senderMap)
+const messageMap = localStorage.getItem("senderMap")
+
+if (messageMap) {
+  // Parse the JSON string back into an array and then create a new map
+  const storedMapArray = JSON.parse(messageMap);
+  const retrievedMap = new Map(storedMapArray);
+
+  // Now 'retrievedMap' contains the map from localStorage
+  console.log(retrievedMap);
+} else {
+  console.log('No map found in localStorage');
+}
+
+
+console.log(messageMap)
 
 const messageEntry1 = messageMap.entries().next().value;
 const messagePerson1 = messageEntry1[0];//name of person 1
@@ -29,7 +59,7 @@ const messageValue2 = messageEntry2[1];//no. of messages by person 2
 
 // top 5 used emojis
 
-mostUsedEmojiMap = new Map(emojiMap)
+const mostUsedEmojiMap = localStorage.getItem("emojiMap")
 
 
 const emojiEntry1 = mostUsedEmojiMap.entries().next().value;
@@ -62,7 +92,7 @@ const emojiValue5 = emojiEntry5[1]; // no. of times emoji 5 is used
 
 // Mosted texted on which date
 
-mostTextedMap = new Map(dateMap);
+const mostTextedMap = localStorage.getItem("dateMap")
 
 const mostTextedEntry = mostTextedMap.entries().next().value;
 const mostTextedDate = mostTextedEntry[0];
@@ -87,3 +117,31 @@ const mostTextedTime = mostTextedEntry[1];// how many they have send
 // Most Active time
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+///// the change area
+/////
+/////
+////
+
+
+
+
+document.getElementById("person1").innerHTML(messagePerson1)
+document.getElementById("person1").innerHTML(messagePerson1)
+document.getElementById("total_message").innerHTML(totalConversation)
+
+
+
+*/
